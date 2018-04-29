@@ -1,0 +1,66 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sacrious.nativapps.ui.view.person.PersonFragment"
+    >
+
+  <android.support.constraint.ConstraintLayout
+      android:id="@+id/container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name_txt_input_ly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextInputLayoutStandard"
+        >
+
+      <android.support.design.widget.TextInputEditText
+          android:drawableLeft="@drawable/ic_company"
+          android:drawableStart="@drawable/ic_company"
+          android:hint="@string/name"
+          android:inputType="textPersonName"
+          style="@style/TextInputEditTextStandard"
+          />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/address_txt_input_ly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_txt_input_ly"
+        style="@style/TextInputLayoutStandard"
+        >
+
+      <android.support.design.widget.TextInputEditText
+          android:drawableLeft="@drawable/ic_location"
+          android:drawableStart="@drawable/ic_location"
+          android:hint="@string/address"
+          android:inputType="textPostalAddress"
+          style="@style/TextInputEditTextStandard"
+          />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/phone_txt_input_ly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_txt_input_ly"
+        style="@style/TextInputLayoutStandard"
+        >
+
+      <android.support.design.widget.TextInputEditText
+          android:drawableLeft="@drawable/ic_phone"
+          android:drawableStart="@drawable/ic_phone"
+          android:hint="@string/phone"
+          android:imeOptions="actionSend"
+          android:inputType="phone"
+          style="@style/TextInputEditTextStandard"
+          />
+    </android.support.design.widget.TextInputLayout>
+  </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

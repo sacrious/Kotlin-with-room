@@ -1,0 +1,54 @@
+<resources>
+  <string name="app_name">Nativapps</string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string name="name">Nombre</string>
+  <string name="invalid_field">Debes llenar este campo</string>
+  <string name="phone">Teléfono</string>
+  <string name="address">Dirección</string>
+  <string name="title">Titulo</string>
+  <string name="description">Descripción</string>
+  <string name="value">Valor</string>
+  <string name="email">Email</string>
+  <string name="date">Fecha</string>
+  <string name="invalid_email">Email invalido</string>
+  <string name="success">Exitoso</string>
+  <string name="success_subtitle">%s ha sido agregado</string>
+  <string name="status">Estado</string>
+  <string name="alert">Alerta</string>
+  <string name="should_create_person">Debes crear primero una persona</string>
+  <string name="should_create_company">Debes crear una organización</string>
+  <string name="should_create_business">Debes crear primero un negocio con estado activado</string>
+  <string name="type">Tipo</string>
+  <string name="hour">Hora</string>
+  <string name="people">Personas</string>
+  <string name="companies">Organizaciones</string>
+  <string name="businesses">Negocios</string>
+  <string name="activities">Actividades</string>
+  <string name="home">Home</string>
+  <string name="developer_name">Desarrollado por: Sergio Fierro Perdomo</string>
+  <string name="faq">Preguntas y respuestas</string>
+  <string name="item_number">Cantidad agregados: %d</string>
+  <string name="enabled">Activo</string>
+  <string name="disabled">Desactivado</string>
+
+  <string-array name="faq_title">
+    <item>¿Qué se logró?</item>
+    <item>Arquitectura</item>
+    <item>Tiempo de desarrollo</item>
+    <item>Librerias</item>
+    <item>¿Por qué Kotlin y no Java?</item>
+    <item>¿Que experiencia tengo?</item>
+  </string-array>
+
+  <string-array name="faq_description">
+    <item>Se logró a cabalidad los requerimientos en la prueba, teniendo un extra en la solución, todos los datos están siendo persistidos</item>
+    <item>Se usa MVP, la idea de esta arquitectura es lograr separar logica de negocios con parte grafica.</item>
+    <item>Creando la arquitectura me tomó 3 horas, ya el desarrollo completo del aplicativo me tomó unas 9 horas</item>
+    <item>Se usó Room para la persistencia de datos, Anko una librería que va muy bien con los desarrollos hechos en Kotlin, Lottie para crear la animación del guiño al iniciar la app, Dagger para trabajar con injecciones de dependencia</item>
+    <item>Siento libertad en los dos, actualmente trabajo en un app que cuenta con modulos en ambos lenguajes, pero decidí hacerlo en Kotlin ya que trae muchos beneficios a la hora de hacer un desarrollo más agíl</item>
+    <item>Voy a llegar a 3 años como desarrollador, inicié mi trabajo con Android y es donde más cuento con experiencia, trabajé mucho tiempo con iOS(Objetive-C y Swift) y logré hacer algunos proyectos en Windows Phone</item>
+  </string-array>
+</resources>

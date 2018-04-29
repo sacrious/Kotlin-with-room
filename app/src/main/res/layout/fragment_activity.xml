@@ -1,0 +1,139 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sacrious.nativapps.ui.view.activity.ActivityFragment"
+    >
+
+  <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/description_txt_input_ly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextInputLayoutStandard"
+        >
+
+      <android.support.design.widget.TextInputEditText
+          android:drawableLeft="@drawable/ic_activity"
+          android:drawableStart="@drawable/ic_activity"
+          android:hint="@string/description"
+          android:inputType="text"
+          style="@style/TextInputEditTextStandard"
+          />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/type_txt_input_ly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_txt_input_ly"
+        style="@style/TextInputLayoutStandard"
+        >
+
+      <android.support.design.widget.TextInputEditText
+          android:drawableLeft="@drawable/ic_type"
+          android:drawableStart="@drawable/ic_type"
+          android:hint="@string/type"
+          android:inputType="textPersonName"
+          style="@style/TextInputEditTextStandard"
+          />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/label_people"
+        android:text="@string/people"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_txt_input_ly"
+        style="@style/LabelIndicator"
+        />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/people_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_people"
+        style="@style/SpinnerStandard"
+        />
+
+    <TextView
+        android:id="@+id/label_companies"
+        android:text="@string/companies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/people_sp"
+        style="@style/LabelIndicator"
+        />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/company_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_companies"
+        style="@style/SpinnerStandard"
+        />
+
+    <TextView
+        android:id="@+id/label_businesses"
+        android:text="@string/businesses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company_sp"
+        style="@style/LabelIndicator"
+        />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/business_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_businesses"
+        style="@style/SpinnerStandard"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/date_txt_input_ly"
+        app:layout_constraintEnd_toStartOf="@+id/time_txt_input_ly"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/business_sp"
+        style="@style/TextInputLayoutStandard"
+        >
+
+      <android.support.design.widget.TextInputEditText
+          android:drawableLeft="@drawable/ic_date"
+          android:drawableStart="@drawable/ic_date"
+          android:focusable="false"
+          android:hint="@string/date"
+          android:inputType="date"
+          style="@style/TextInputEditTextStandard"
+          />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/time_txt_input_ly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/date_txt_input_ly"
+        app:layout_constraintTop_toBottomOf="@+id/business_sp"
+        style="@style/TextInputLayoutStandard"
+        >
+
+      <android.support.design.widget.TextInputEditText
+          android:drawableLeft="@drawable/ic_time"
+          android:drawableStart="@drawable/ic_time"
+          android:focusable="false"
+          android:hint="@string/hour"
+          android:inputType="date"
+          style="@style/TextInputEditTextStandard"
+          />
+    </android.support.design.widget.TextInputLayout>
+
+  </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
